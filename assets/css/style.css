@@ -1,79 +1,123 @@
-/*Name Container*/
-.name {
-    float:left;
-    background-color: #4aaaa5;
-    font-family: Georgia, Times, 'Times New Roman', serif;
-    color: white;
-    padding: 5px;
-    width: 350px;
+/** Teal color (used for headings and backgrounds): `#4aaaa5`
+   * Regular font color (used for paragraphs and all text besides the headings): `#777777`
+   * Main header background color: `#ffffff`
+   * Main header border color: `#cccccc`
+   * Footer background color: `#666666`
+   * Main content background color: `#ffffff`
+   * Main content border color: `#dddddd`
 
-}
-/* Navigation Bar */
-.topnav {
-    background-color: #ffffff;
-    overflow: hidden;
-    padding: 100 px; 
-    float: right;
-
-}
-/* Style the links inside the navigation bar */
-.topnav a {
-    float: left;
-   /* color: ;*/
-   /* text-align: ;*/
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-}
-/* .name { 
-    background-color: #4aaaa5;
-    font-family: Georgia, Times, 'Times New Roman', serif;
-    color: white;
-    padding: 20px;
-    width: 350px;
-    float: left;
-}*/
-
+2. Fonts:
+   * For heading fonts use `font-family: 'Georgia', Times, Times New Roman, serif;`.
+   * For all other fonts use `'Arial', 'Helvetica Neue', Helvetica, sans-serif;`.*/
 body {
-    background-color: #ffffff;
     font-family: arial, 'helvetica-neue', helvetica, sans-serif;
     color: #777777;
-    border-color: #dddddd;
+    font-size: 20px;
+    padding: 1em;
+    background-image: url("/assets/images/pink-dust.png");
+    margin: 0;
     width: 960px;
-    /* background-image: */
 }
 
 header {
     background-color: #ffffff;
+    border: 10px;
     border-color: #cccccc;
+    padding: 10px;
+    margin: 10px;
+    width: 940px;
 }
-/* #name {
-    background-color: #4aaaa5;
-    font-family: Georgia, Times, 'Times New Roman', serif;
+
+.name {
     color: white;
-    padding: 20px;
-    width: 350px;
-} */
+    background-color: #4aaaa5;
+    border: 3px #cccccc;
+    width: 400px;
+    padding: 5px;
+    text-align: center;
+   }
 
-.container {
-    background-color: white;
-    padding: 50px;
-    float: left;
-    border: 100px;
-    margin: 50px;
+   /* add a background to the top navigation*/
+.topnav {
+    float: right;
+    background-color: #ffffff;
+    border-color: #cccccc;
+    overflow: hidden;
+    font-size: 30px;
 }
-#section-title {
-    position: static;
+/*Style links inside the navigation bar */
+
+.topnav a {
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+/*active tab color */
+.topnav a.active {
+    background-color: #4aaaa5;
+}
+
+#main-container { 
     width: 960px;
-    border: 3px;
-    background-color: white;
+    background-color: #ffffff;
+    border: 10px #dddddd;
+    margin: 25px;
     padding: 25px;
-    color: #4aaaa5;
-    font-family: Georgia, Times, 'Times New Roman', serif;  
+    align-content: center;
+    overflow: auto;
+    
 }
 
-.photo {
-width: 100px;
-height: 200px;
-/* float: left; */
+#section-title {
+    color: #4aaaa5;
+    text-align: center;
+    border: thick;
+    border-bottom-color: #777777;
+    padding: 10px;
+    margin: 0px;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+}
+img {
+    float: left;
+    width: 200px;
+    height: 200px;
+    margin: 25px;
+    padding: 25px;
+}
+
+p {
+    clear: right;
+    margin: 0;
+    border: 0;
+    padding: 25px;
+
+}
+/*need to make a non-sticky footer*/
+.footer {
+    margin: 25px;
+    padding: 25px;
+    width: 960px;
+    border-color: gray;
+    background-color: black;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+
+}
+/*styling the form */
+#form-container {
+    width: 960ps;
+    margin: 25 px;
+    padding: 25px;
+}
+input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+textarea {
+    width: 100%;
+    height: 150px;
+
 }

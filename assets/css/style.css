@@ -14,54 +14,84 @@ body {
     color: #777777;
     font-size: 20px;
     padding: 1em;
-    background-image: url("/assets/images/pink-dust.png");
-    margin: 0;
+    background-image: url(../images/pink-dust.png);
     width: 960px;
-}
+    margin: auto;
+    height:fit-content;
 
-header {
+}
+.heading-container {
+    height: 40px;
     background-color: #ffffff;
-    border: 10px;
     border-color: #cccccc;
+    border: 3px outset;
     padding: 10px;
-    margin: 10px;
-    width: 940px;
+    padding-left: 0px;
 }
 
 .name {
+    float: left;
     color: white;
     background-color: #4aaaa5;
     border: 3px #cccccc;
     width: 400px;
-    padding: 5px;
+    padding: 16px;
+    margin:0;
     text-align: center;
+    overflow: hidden;
    }
 
    /* add a background to the top navigation*/
 .topnav {
-    float: right;
-    background-color: #ffffff;
-    border-color: #cccccc;
-    overflow: hidden;
+    vertical-align: 0%;
+    /* background-color: #ffffff; */
+    /* border-color: #cccccc; */
+    /* overflow: hidden; */
     font-size: 30px;
 }
 /*Style links inside the navigation bar */
 
-.topnav a {
-    padding: 14px 16px;
+.nav-links {
+    float: right;
+    /* clear: both; */
+    list-style-type: none;
+    /* margin-top: -100; */
+    padding-top: 10px;
+    
+}
+
+li {
+    display: inline;
+    padding: 5px;
+    margin: auto;
+    border-right: 1px solid #bbb;
+}
+
+li a {
+    
+    text-align: center;
+    padding: 14px 16 px;
     text-decoration: none;
-    font-size: 17px;
+
+}
+
+li a:hover {
+    background-color:gray;
 }
 /*active tab color */
 .topnav a.active {
     background-color: #4aaaa5;
+    color: white;
 }
 
-#main-container { 
-    width: 960px;
+li:last-child {
+    border-right: none;
+}
+
+.main-container { 
     background-color: #ffffff;
-    border: 10px #dddddd;
-    margin: 25px;
+    border: 10px solid #dddddd;
+    margin: 0px;
     padding: 25px;
     align-content: center;
     overflow: auto;
@@ -87,37 +117,55 @@ img {
 
 p {
     clear: right;
-    margin: 0;
+    margin: auto;
     border: 0;
     padding: 25px;
 
 }
-/*need to make a non-sticky footer*/
-.footer {
-    margin: 25px;
-    padding: 25px;
-    width: 960px;
-    border-color: gray;
-    background-color: black;
-    text-align: center;
-    position: fixed;
-    bottom: 0;
 
-}
+
 /*styling the form */
 #form-container {
-    width: 960ps;
-    margin: 25 px;
+    width: 960px;
+    margin: auto;
     padding: 25px;
+    overflow: none;
 }
 input {
-    width: 100%;
+    width: 800px;
     padding: 12px 20px;
     margin: 8px 0;
     box-sizing: border-box;
 }
 textarea {
-    width: 100%;
+    width: 800px;
     height: 150px;
+
+}
+
+.images {
+    position: relative;
+}
+
+#image1 {
+    float:left;
+}
+
+#image2 {
+    float:left;
+}
+#image3 {
+    float:left;
+    position:relative;
+}
+
+.footer {
+    margin: auto;
+    padding: 25px;
+    border-color: gray;
+    background-color:#666666;
+    text-align: center;
+    bottom: 0;
+    pos
 
 }
